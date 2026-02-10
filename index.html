@@ -58,7 +58,18 @@
       flex: 1;
       padding: 0px 0px 100px 50px;
       background-color: #fff;
+      position: relative;
     }
+    .main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;         /* matches left padding */
+  height: 100%;
+  background-color: #f0f0f0; /* same as sidebar */
+  z-index: 0;
+}
 
     /* Navigation links on top */
     .nav-links {
