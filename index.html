@@ -3,88 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <title>Aashisna | Portfolio</title>
-
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    nav {
       display: flex;
-      gap: 20px;
-      margin-bottom: 20px;
+      min-height: 100vh;
     }
-    nav a {
+
+    /* Left sidebar */
+    .sidebar {
+      width: 250px;
+      background-color: #f0f0f0;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sidebar img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .sidebar h3 {
+      margin: 10px 0 5px;
+    }
+
+    .sidebar p {
+      margin: 5px 0;
+      text-align: center;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 5px 0;
       text-decoration: none;
       color: #0077cc;
       font-weight: bold;
     }
-    section {
-      margin-top: 40px;
+
+    .sidebar .icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin: 5px;
     }
+
+    /* Right main content */
+    .main {
+      flex: 1;
+      padding: 30px;
+      background-color: #fff;
+    }
+
+    /* Navigation links on top */
+    .nav-links {
+      background-color: #e0e0e0;
+      padding: 10px 15px;
+      margin-bottom: 30px;
+    }
+
+    .nav-links a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
     h2 {
       border-bottom: 2px solid #ddd;
       padding-bottom: 5px;
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">Home</a>
-    <a href="#publications">Publications</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#links">Useful Links</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Left Sidebar -->
+  <div class="sidebar">
+    <img src="your-photo.jpg" alt="Aashisna" class="profile">
+    <h3>Aashisna Thapaliya</h3>
+    <p>Kathmandu, Nepal</p>
+    <a href="CV.pdf" target="_blank">Download CV</a>
+    <p>Email: <a href="mailto:aashisnathapaliya@gmail.com">aashisnathapaliya@gmail.com</a></p>
+    <div>
+      <a href="https://github.com/Aashisna" target="_blank">
+        <img src="github-icon.png" alt="GitHub" class="icon">
+      </a>
+      <a href="https://scholar.google.com/" target="_blank">
+        <img src="scholar-icon.png" alt="Google Scholar" class="icon">
+      </a>
+      <a href="https://www.linkedin.com/in/aashisna-thapaliya-a57874204" target="_blank">
+        <img src="linkedin-icon.png" alt="LinkedIn" class="icon">
+      </a>
+    </div>
+  </div>
 
-  <!-- Home / About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p><strong>Aashisna</strong></p>
-    <p>Computer Engineering Graduate | Aspiring Researcher | NLP | Machine Learning</p>
-    <p>Welcome to my academic and research portfolio.</p>
-  </section>
+  <!-- Right Main Content -->
+  <div class="main">
+    <!-- Navigation -->
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="links.html">Useful Links</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
-  <!-- Publications -->
-  <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li>Title of Publication 1 — Journal/Conference (Year)</li>
-      <li>Title of Publication 2 — Journal/Conference (Year)</li>
-      <li>Add more as you publish</li>
-    </ul>
-  </section>
+    <!-- About Me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I am <strong>Aashisna Thapaliya</strong>, a Computer Engineering graduate with a strong interest in NLP and Machine Learning. I am a prospective researcher aspiring to contribute to innovative projects in AI and computational linguistics.</p>
+    </section>
 
-  <!-- Achievements -->
-  <section id="achievements">
-    <h2>Achievements & Projects</h2>
-    <ul>
-      <li>Project / Work 1 (short description)</li>
-      <li>Project / Work 2 (short description)</li>
-      <li>Competition / Award</li>
-    </ul>
-  </section>
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Bachelor of Computer Engineering, XYZ University, 2020</li>
+        <li>Other relevant courses or certifications</li>
+      </ul>
+    </section>
 
-  <!-- Useful Links -->
-  <section id="links">
-    <h2>Useful Links</h2>
-    <p><a href="www.linkedin.com/in/aashisna-thapaliya-a57874204" target="_blank">LinkedIn</a></p>
-    <p><a href="https://github.com/Aashisna" target="_blank">GitHub</a></p>
-    <p><a href="https://scholar.google.com/" target="_blank">Google Scholar</a></p>
-    <p><a href="CV.pdf" target="_blank">Download CV</a></p>
-  </section>
+    <!-- Research Experience -->
+    <section id="research">
+      <h2>Research Experience</h2>
+      <ul>
+        <li>Project: Grievance Classification using NLP — multilingual Nepali datasets</li>
+        <li>Other research work, thesis, or internships</li>
+      </ul>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: aashisnathapaliya@gmail.com</p>
-  </section>
+    <!-- Professional Experience -->
+    <section id="professional">
+      <h2>Professional Experience</h2>
+      <ul>
+        <li>Job/Internship 1 — role, responsibilities, duration</li>
+        <li>Job/Internship 2 — role, responsibilities, duration</li>
+      </ul>
+    </section>
 
-</body>
-</html>
-
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Natural Language Processing (NLP)</li>
+        <li>Machine Learning / Deep Learning</li>
+        <li>Python, PyTorch, TensorFlow</li>
+        <li>Data Analysis & Visualization</li>
+      </ul
