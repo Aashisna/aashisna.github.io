@@ -173,6 +173,19 @@ footer p:hover {
   font-weight: bold;
   color: #333;
 }
+.achievement-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.achievement-item img {
+  width: 100%;          /* make image fill container */
+  height: 250px;        /* fixed same height */
+  object-fit: cover;    /* crop properly without distortion */
+  border-radius: 8px;
+}
+
 
 
 
