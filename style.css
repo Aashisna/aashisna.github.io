@@ -30,7 +30,8 @@ body {
 }
 
 /* Profile Image */
- .sidebar img.profile {
+
+    .sidebar img.profile {
   width: 175px;
   height: 175px;
   border-radius: 50%;
