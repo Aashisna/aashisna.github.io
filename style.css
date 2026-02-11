@@ -86,7 +86,7 @@ body {
     display: flex;
     gap: 15px;
     background-color: #e0e0e0;
-    padding: 10px 15px;
+    padding: 10px 0px;
     margin-bottom: 20px;
 }
 
