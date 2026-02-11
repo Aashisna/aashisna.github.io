@@ -30,15 +30,16 @@ body {
 }
 
 /* Profile Image */
-.sidebar img.profile {
-    width: 175px;
-    height: 175px;
-    border-radius: 50%;
-    margin: 50px 0 15px 0;
-    object-fit: cover;
-    background-color: black; /* subtle background */
-    padding: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+ .sidebar img.profile {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  object-fit: cover;
+  background-color: #f5f5f5; /* light gray, soft border */
+  padding: 3px;              /* smaller padding */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* softer shadow */
 }
 
 /* Sidebar Headings */
