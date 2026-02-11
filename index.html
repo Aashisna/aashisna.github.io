@@ -122,18 +122,41 @@ footer {
     .licon{
       margin-right: 10px;
     }
+      /* Container that holds sidebar + main */
+.container {
+  display: flex;
+  max-width: 1200px;  /* total width of content */
+  margin: 0 auto;     /* center horizontally */
+  gap: 40px;          /* space between sidebar and main */
+  padding: 20px;      /* space inside container edges */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 350px; /* fixed width */
+}
+
+/* Main content */
+.main {
+  flex: 1;      /* take remaining space */
+  max-width: 850px;
+  background-color: #fff;
+  padding: 0px 20px 100px 20px;
+}
+
   </style>
 </head>
   
 <body>
+  <div class="container">
   <!-- Left Sidebar -->
   <div class="sidebar">
     
     <img src="aashisna_photo.JPG" alt="Aashisna" class="profile">
     <h3>Aashisna Thapaliya</h3>
-    <i class="fa-solid fa-location-dot" class="licon"></i><Strong>Location:</Strong> Kathmandu, Nepal
-    <a href="Aashisna's_CV (1).pdf" target="_blank"><i class="fa-solid fa-download" class="licon"></i><Strong>Download:</Strong> CV</a>
-    <a href="mailto:aashisnathapaliya@gmail.com"> <i class="fa-solid fa-envelope" class="licon"></i><strong>Email:</strong>aashisnathapaliya@gmail.com</a>
+    <i class="fa-solid fa-location-dot" class="licon"></i>Location: Kathmandu, Nepal
+    <a href="Aashisna's_CV (1).pdf" target="_blank"><i class="fa-solid fa-download" class="licon"></i>Download:CV</a>
+    <a href="mailto:aashisnathapaliya@gmail.com"> <i class="fa-solid fa-envelope" class="licon"></i>Email:aashisnathapaliya@gmail.com</a>
     <div>
       <a href="https://github.com/Aashisna" target="_blank">
         <i class="fa-brands fa-github"></i> GitHub
@@ -202,6 +225,7 @@ footer {
       <p><strong>Broad Skills:</strong> Distributed System | Data Structure and Algorithm | Problem Solving | Machine Learning | Natural Language Processing | Teaching |</p>
   </section>
   </div>
+    </div>
       <footer>
       <p>&copy; 2026 Aashisna Thapaliya. All Rights Reserved.</p>
       </footer>
