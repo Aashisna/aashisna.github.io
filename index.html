@@ -10,7 +10,6 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      display: flex;
       min-height: 100vh;
     }
 
@@ -124,11 +123,12 @@ footer {
     }
       /* Container that holds sidebar + main */
 .container {
-  display: flex;
-  max-width: 1200px;  /* total width of content */
-  margin: 0 auto;     /* center horizontally */
-  gap: 40px;          /* space between sidebar and main */
-  padding: 20px;      /* space inside container edges */
+  display: flex;           /* sidebar + main side by side */
+  justify-content: center; /* center horizontally on page */
+  gap: 40px;               /* space between sidebar & main */
+  max-width: 1200px;       /* total width of content */
+  margin: 0 auto;          /* horizontally center container */
+  padding: 20px;
 }
 
 /* Sidebar */
