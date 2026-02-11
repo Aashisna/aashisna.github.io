@@ -126,3 +126,10 @@ footer {
 footer p:hover {
     text-decoration: underline;
 }
+
+#publications {
+    background-color: #ffffff; /* white block inside light gray */
+    padding: 20px;
+    border-radius: 8px;          /* rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* soft shadow */
+}
